@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2ED57E71E33A88F0012780D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57E61E33A88F0012780D /* AppDelegate.swift */; };
+		D2ED57E91E33A88F0012780D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57E81E33A88F0012780D /* ViewController.swift */; };
+		D2ED57EC1E33A88F0012780D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57EA1E33A88F0012780D /* Main.storyboard */; };
+		D2ED57EE1E33A88F0012780D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57ED1E33A88F0012780D /* Assets.xcassets */; };
+		D2ED57F11E33A88F0012780D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D2ED57E31E33A88F0012780D /* Chat iOS 10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat iOS 10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ED57E61E33A88F0012780D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2ED57E81E33A88F0012780D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2ED57EB1E33A88F0012780D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2ED57ED1E33A88F0012780D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2ED57F01E33A88F0012780D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2ED57F21E33A88F0012780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2ED57E01E33A88F0012780D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2ED57DA1E33A88F0012780D = {
+			isa = PBXGroup;
+			children = (
+				D2ED57E51E33A88F0012780D /* Chat iOS 10 */,
+				D2ED57E41E33A88F0012780D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2ED57E41E33A88F0012780D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2ED57E31E33A88F0012780D /* Chat iOS 10.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2ED57E51E33A88F0012780D /* Chat iOS 10 */ = {
+			isa = PBXGroup;
+			children = (
+				D2ED57E61E33A88F0012780D /* AppDelegate.swift */,
+				D2ED57E81E33A88F0012780D /* ViewController.swift */,
+				D2ED57EA1E33A88F0012780D /* Main.storyboard */,
+				D2ED57ED1E33A88F0012780D /* Assets.xcassets */,
+				D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */,
+				D2ED57F21E33A88F0012780D /* Info.plist */,
+			);
+			path = "Chat iOS 10";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2ED57E21E33A88F0012780D /* Chat iOS 10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2ED57F51E33A88F0012780D /* Build configuration list for PBXNativeTarget "Chat iOS 10" */;
+			buildPhases = (
+				D2ED57DF1E33A88F0012780D /* Sources */,
+				D2ED57E01E33A88F0012780D /* Frameworks */,
+				D2ED57E11E33A88F0012780D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chat iOS 10";
+			productName = "Chat iOS 10";
+			productReference = D2ED57E31E33A88F0012780D /* Chat iOS 10.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2ED57DB1E33A88F0012780D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Vladimir Valter";
+				TargetAttributes = {
+					D2ED57E21E33A88F0012780D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9F99Z2TAVG;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D2ED57DE1E33A88F0012780D /* Build configuration list for PBXProject "Chat iOS 10" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2ED57DA1E33A88F0012780D;
+			productRefGroup = D2ED57E41E33A88F0012780D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2ED57E21E33A88F0012780D /* Chat iOS 10 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2ED57E11E33A88F0012780D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ED57F11E33A88F0012780D /* LaunchScreen.storyboard in Resources */,
+				D2ED57EE1E33A88F0012780D /* Assets.xcassets in Resources */,
+				D2ED57EC1E33A88F0012780D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2ED57DF1E33A88F0012780D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ED57E91E33A88F0012780D /* ViewController.swift in Sources */,
+				D2ED57E71E33A88F0012780D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2ED57EA1E33A88F0012780D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2ED57EB1E33A88F0012780D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2ED57F01E33A88F0012780D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2ED57F31E33A88F0012780D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2ED57F41E33A88F0012780D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2ED57F61E33A88F0012780D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9F99Z2TAVG;
+				INFOPLIST_FILE = "Chat iOS 10/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladimirvalter.Chat-iOS-10";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2ED57F71E33A88F0012780D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9F99Z2TAVG;
+				INFOPLIST_FILE = "Chat iOS 10/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladimirvalter.Chat-iOS-10";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2ED57DE1E33A88F0012780D /* Build configuration list for PBXProject "Chat iOS 10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2ED57F31E33A88F0012780D /* Debug */,
+				D2ED57F41E33A88F0012780D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2ED57F51E33A88F0012780D /* Build configuration list for PBXNativeTarget "Chat iOS 10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2ED57F61E33A88F0012780D /* Debug */,
+				D2ED57F71E33A88F0012780D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2ED57DB1E33A88F0012780D /* Project object */;
+}
