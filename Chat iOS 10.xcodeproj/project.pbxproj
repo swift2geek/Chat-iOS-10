@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC32CC8510C2C50B031C9CDB /* Pods_Chat_iOS_10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112CC58193BE8C5DAC1EFB0F /* Pods_Chat_iOS_10.framework */; };
 		D2ED57E71E33A88F0012780D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57E61E33A88F0012780D /* AppDelegate.swift */; };
 		D2ED57EC1E33A88F0012780D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57EA1E33A88F0012780D /* Main.storyboard */; };
 		D2ED57EE1E33A88F0012780D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57ED1E33A88F0012780D /* Assets.xcassets */; };
 		D2ED57F11E33A88F0012780D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */; };
 		D2ED57FD1E34B7200012780D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57FC1E34B7200012780D /* SignInVC.swift */; };
 		D2ED57FF1E34B9390012780D /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57FE1E34B9390012780D /* ContactsVC.swift */; };
+		D2ED58011E34D0E90012780D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2ED58001E34D0E90012780D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112CC58193BE8C5DAC1EFB0F /* Pods_Chat_iOS_10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_iOS_10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		402AEF39DA742CA91C6BF373 /* Pods-Chat iOS 10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat iOS 10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat iOS 10/Pods-Chat iOS 10.debug.xcconfig"; sourceTree = "<group>"; };
+		C6317E20FA88C7D5838363C2 /* Pods-Chat iOS 10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat iOS 10.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chat iOS 10/Pods-Chat iOS 10.release.xcconfig"; sourceTree = "<group>"; };
 		D2ED57E31E33A88F0012780D /* Chat iOS 10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat iOS 10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ED57E61E33A88F0012780D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2ED57EB1E33A88F0012780D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D2ED57F21E33A88F0012780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2ED57FC1E34B7200012780D /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		D2ED57FE1E34B9390012780D /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		D2ED58001E34D0E90012780D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC32CC8510C2C50B031C9CDB /* Pods_Chat_iOS_10.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6762EFD4FB2CFCA4232BFE72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112CC58193BE8C5DAC1EFB0F /* Pods_Chat_iOS_10.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC9B7EFCE8E18DC8962658B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				402AEF39DA742CA91C6BF373 /* Pods-Chat iOS 10.debug.xcconfig */,
+				C6317E20FA88C7D5838363C2 /* Pods-Chat iOS 10.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D2ED57DA1E33A88F0012780D = {
 			isa = PBXGroup;
 			children = (
 				D2ED57E51E33A88F0012780D /* Chat iOS 10 */,
 				D2ED57E41E33A88F0012780D /* Products */,
+				CC9B7EFCE8E18DC8962658B5 /* Pods */,
+				6762EFD4FB2CFCA4232BFE72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +91,7 @@
 				D2ED57ED1E33A88F0012780D /* Assets.xcassets */,
 				D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */,
 				D2ED57F21E33A88F0012780D /* Info.plist */,
+				D2ED58001E34D0E90012780D /* GoogleService-Info.plist */,
 			);
 			path = "Chat iOS 10";
 			sourceTree = "<group>";
@@ -106,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2ED57F51E33A88F0012780D /* Build configuration list for PBXNativeTarget "Chat iOS 10" */;
 			buildPhases = (
+				91081FA99679B06131331A16 /* [CP] Check Pods Manifest.lock */,
 				D2ED57DF1E33A88F0012780D /* Sources */,
 				D2ED57E01E33A88F0012780D /* Frameworks */,
 				D2ED57E11E33A88F0012780D /* Resources */,
+				D74E1DFC99CA2328945E5ABC /* [CP] Embed Pods Frameworks */,
+				D7FE0D5F4A84473F1FC4071C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,12 +190,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2ED57F11E33A88F0012780D /* LaunchScreen.storyboard in Resources */,
+				D2ED58011E34D0E90012780D /* GoogleService-Info.plist in Resources */,
 				D2ED57EE1E33A88F0012780D /* Assets.xcassets in Resources */,
 				D2ED57EC1E33A88F0012780D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91081FA99679B06131331A16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D74E1DFC99CA2328945E5ABC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chat iOS 10/Pods-Chat iOS 10-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7FE0D5F4A84473F1FC4071C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chat iOS 10/Pods-Chat iOS 10-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2ED57DF1E33A88F0012780D /* Sources */ = {
@@ -295,6 +374,7 @@
 		};
 		D2ED57F61E33A88F0012780D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 402AEF39DA742CA91C6BF373 /* Pods-Chat iOS 10.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9F99Z2TAVG;
@@ -309,6 +389,7 @@
 		};
 		D2ED57F71E33A88F0012780D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6317E20FA88C7D5838363C2 /* Pods-Chat iOS 10.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9F99Z2TAVG;
