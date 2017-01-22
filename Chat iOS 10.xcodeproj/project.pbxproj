@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D2ED57E71E33A88F0012780D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57E61E33A88F0012780D /* AppDelegate.swift */; };
-		D2ED57E91E33A88F0012780D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57E81E33A88F0012780D /* ViewController.swift */; };
 		D2ED57EC1E33A88F0012780D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57EA1E33A88F0012780D /* Main.storyboard */; };
 		D2ED57EE1E33A88F0012780D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57ED1E33A88F0012780D /* Assets.xcassets */; };
 		D2ED57F11E33A88F0012780D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */; };
+		D2ED57FD1E34B7200012780D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57FC1E34B7200012780D /* SignInVC.swift */; };
+		D2ED57FF1E34B9390012780D /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57FE1E34B9390012780D /* ContactsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2ED57E31E33A88F0012780D /* Chat iOS 10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat iOS 10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ED57E61E33A88F0012780D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2ED57E81E33A88F0012780D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2ED57EB1E33A88F0012780D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2ED57ED1E33A88F0012780D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2ED57F01E33A88F0012780D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2ED57F21E33A88F0012780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2ED57FC1E34B7200012780D /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		D2ED57FE1E34B9390012780D /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		D2ED57E51E33A88F0012780D /* Chat iOS 10 */ = {
 			isa = PBXGroup;
 			children = (
+				D2ED57FB1E34B6E40012780D /* Plugins */,
+				D2ED57FA1E34B6CF0012780D /* Controller */,
+				D2ED57F91E34B6C70012780D /* View */,
+				D2ED57F81E34B6B80012780D /* Model */,
 				D2ED57E61E33A88F0012780D /* AppDelegate.swift */,
-				D2ED57E81E33A88F0012780D /* ViewController.swift */,
 				D2ED57EA1E33A88F0012780D /* Main.storyboard */,
 				D2ED57ED1E33A88F0012780D /* Assets.xcassets */,
 				D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */,
 				D2ED57F21E33A88F0012780D /* Info.plist */,
 			);
 			path = "Chat iOS 10";
+			sourceTree = "<group>";
+		};
+		D2ED57F81E34B6B80012780D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D2ED57F91E34B6C70012780D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D2ED57FA1E34B6CF0012780D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2ED57FC1E34B7200012780D /* SignInVC.swift */,
+				D2ED57FE1E34B9390012780D /* ContactsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D2ED57FB1E34B6E40012780D /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Plugins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2ED57E91E33A88F0012780D /* ViewController.swift in Sources */,
+				D2ED57FD1E34B7200012780D /* SignInVC.swift in Sources */,
 				D2ED57E71E33A88F0012780D /* AppDelegate.swift in Sources */,
+				D2ED57FF1E34B9390012780D /* ContactsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9F99Z2TAVG;
 				INFOPLIST_FILE = "Chat iOS 10/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vladimirvalter.Chat-iOS-10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9F99Z2TAVG;
 				INFOPLIST_FILE = "Chat iOS 10/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vladimirvalter.Chat-iOS-10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
