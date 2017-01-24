@@ -23,7 +23,9 @@ class ContactsVC: UIViewController {
     
 
     @IBAction func logout(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        if AuthProvider.Instance.logOut() {
+            dismiss(animated: true, completion: nil)
+        }
     }
 
 

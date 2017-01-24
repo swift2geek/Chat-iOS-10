@@ -14,7 +14,10 @@
 		D2ED57F11E33A88F0012780D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */; };
 		D2ED57FD1E34B7200012780D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57FC1E34B7200012780D /* SignInVC.swift */; };
 		D2ED57FF1E34B9390012780D /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED57FE1E34B9390012780D /* ContactsVC.swift */; };
-		D2ED58011E34D0E90012780D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2ED58001E34D0E90012780D /* GoogleService-Info.plist */; };
+		D2ED58031E351B200012780D /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED58021E351B200012780D /* AuthProvider.swift */; };
+		D2ED58091E3682110012780D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2ED58081E3682110012780D /* GoogleService-Info.plist */; };
+		D2ED580B1E37536D0012780D /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED580A1E37536D0012780D /* DBProvider.swift */; };
+		D2ED580D1E3755EE0012780D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED580C1E3755EE0012780D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +32,10 @@
 		D2ED57F21E33A88F0012780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2ED57FC1E34B7200012780D /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		D2ED57FE1E34B9390012780D /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
-		D2ED58001E34D0E90012780D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2ED58021E351B200012780D /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		D2ED58081E3682110012780D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2ED580A1E37536D0012780D /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		D2ED580C1E3755EE0012780D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +97,7 @@
 				D2ED57ED1E33A88F0012780D /* Assets.xcassets */,
 				D2ED57EF1E33A88F0012780D /* LaunchScreen.storyboard */,
 				D2ED57F21E33A88F0012780D /* Info.plist */,
-				D2ED58001E34D0E90012780D /* GoogleService-Info.plist */,
+				D2ED58081E3682110012780D /* GoogleService-Info.plist */,
 			);
 			path = "Chat iOS 10";
 			sourceTree = "<group>";
@@ -99,6 +105,7 @@
 		D2ED57F81E34B6B80012780D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D2ED580C1E3755EE0012780D /* Constants.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -122,6 +129,8 @@
 		D2ED57FB1E34B6E40012780D /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				D2ED58021E351B200012780D /* AuthProvider.swift */,
+				D2ED580A1E37536D0012780D /* DBProvider.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -190,7 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2ED57F11E33A88F0012780D /* LaunchScreen.storyboard in Resources */,
-				D2ED58011E34D0E90012780D /* GoogleService-Info.plist in Resources */,
+				D2ED58091E3682110012780D /* GoogleService-Info.plist in Resources */,
 				D2ED57EE1E33A88F0012780D /* Assets.xcassets in Resources */,
 				D2ED57EC1E33A88F0012780D /* Main.storyboard in Resources */,
 			);
@@ -253,7 +262,10 @@
 			files = (
 				D2ED57FD1E34B7200012780D /* SignInVC.swift in Sources */,
 				D2ED57E71E33A88F0012780D /* AppDelegate.swift in Sources */,
+				D2ED580B1E37536D0012780D /* DBProvider.swift in Sources */,
+				D2ED58031E351B200012780D /* AuthProvider.swift in Sources */,
 				D2ED57FF1E34B9390012780D /* ContactsVC.swift in Sources */,
+				D2ED580D1E3755EE0012780D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +433,7 @@
 				D2ED57F71E33A88F0012780D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
