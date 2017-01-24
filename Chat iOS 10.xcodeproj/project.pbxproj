@@ -18,6 +18,8 @@
 		D2ED58091E3682110012780D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2ED58081E3682110012780D /* GoogleService-Info.plist */; };
 		D2ED580B1E37536D0012780D /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED580A1E37536D0012780D /* DBProvider.swift */; };
 		D2ED580D1E3755EE0012780D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED580C1E3755EE0012780D /* Constants.swift */; };
+		D2ED580F1E37746A0012780D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED580E1E37746A0012780D /* Contact.swift */; };
+		D2ED58111E378DED0012780D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED58101E378DED0012780D /* ChatVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D2ED58081E3682110012780D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2ED580A1E37536D0012780D /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
 		D2ED580C1E3755EE0012780D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D2ED580E1E37746A0012780D /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		D2ED58101E378DED0012780D /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D2ED580C1E3755EE0012780D /* Constants.swift */,
+				D2ED580E1E37746A0012780D /* Contact.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			children = (
 				D2ED57FC1E34B7200012780D /* SignInVC.swift */,
 				D2ED57FE1E34B9390012780D /* ContactsVC.swift */,
+				D2ED58101E378DED0012780D /* ChatVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -260,12 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2ED58111E378DED0012780D /* ChatVC.swift in Sources */,
 				D2ED57FD1E34B7200012780D /* SignInVC.swift in Sources */,
 				D2ED57E71E33A88F0012780D /* AppDelegate.swift in Sources */,
 				D2ED580B1E37536D0012780D /* DBProvider.swift in Sources */,
 				D2ED58031E351B200012780D /* AuthProvider.swift in Sources */,
 				D2ED57FF1E34B9390012780D /* ContactsVC.swift in Sources */,
 				D2ED580D1E3755EE0012780D /* Constants.swift in Sources */,
+				D2ED580F1E37746A0012780D /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

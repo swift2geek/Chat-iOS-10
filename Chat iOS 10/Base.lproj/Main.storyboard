@@ -107,14 +107,65 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sBl-Us-r4p" id="TLU-pz-U71"/>
+                                    <outlet property="delegate" destination="sBl-Us-r4p" id="5cx-hZ-aWH"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myTable" destination="aLJ-Ez-FE3" id="Y2B-Po-csF"/>
+                        <segue destination="dtK-Fo-7bd" kind="show" identifier="ChatSegue" id="Q0C-cM-cPc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJ3-2n-WLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="845.60000000000002" y="123.68815592203899"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="cGd-lo-s6D">
+            <objects>
+                <viewController id="K4b-CL-mMl" customClass="ChatVC" customModule="Chat_iOS_10" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nxB-fh-Pf0"/>
+                        <viewControllerLayoutGuide type="bottom" id="V9w-Xr-A4t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xb9-sL-Zbr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5aF-QQ-1Ln">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="8cf-7R-SPD">
+                            <connections>
+                                <action selector="backBtn:" destination="K4b-CL-mMl" id="rQR-Gd-AAS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gr3-90-66f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="47Y-21-CtY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dtK-Fo-7bd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tm0-VS-l9L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K4b-CL-mMl" kind="relationship" relationship="rootViewController" id="QSo-wC-PFb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULy-wW-VDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818" y="124"/>
         </scene>
     </scenes>
     <resources>
