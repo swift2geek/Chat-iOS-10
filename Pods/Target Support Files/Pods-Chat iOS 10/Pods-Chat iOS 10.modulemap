@@ -1,0 +1,6 @@
+framework module Pods_Chat_iOS_10 {
+  umbrella header "Pods-Chat iOS 10-umbrella.h"
+
+  export *
+  module * { export * }
+}
