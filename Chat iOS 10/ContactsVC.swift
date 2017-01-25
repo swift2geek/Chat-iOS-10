@@ -29,6 +29,11 @@ class ContactsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         self.contacts = contacts
        
         // get the name of current user
+        for contact in contacts {
+            if contact.id == AuthProvider.Instance.userID() {
+                AuthProvider.Instance.userName = contact.name
+            }
+        }
         
         myTable.reloadData()
     }

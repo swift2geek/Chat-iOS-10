@@ -20,6 +20,7 @@
 		D2ED580D1E3755EE0012780D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED580C1E3755EE0012780D /* Constants.swift */; };
 		D2ED580F1E37746A0012780D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED580E1E37746A0012780D /* Contact.swift */; };
 		D2ED58111E378DED0012780D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED58101E378DED0012780D /* ChatVC.swift */; };
+		D2ED58131E3896FB0012780D /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED58121E3896FB0012780D /* MessagesHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D2ED580C1E3755EE0012780D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D2ED580E1E37746A0012780D /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D2ED58101E378DED0012780D /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		D2ED58121E3896FB0012780D /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				D2ED58021E351B200012780D /* AuthProvider.swift */,
 				D2ED580A1E37536D0012780D /* DBProvider.swift */,
+				D2ED58121E3896FB0012780D /* MessagesHandler.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2ED58131E3896FB0012780D /* MessagesHandler.swift in Sources */,
 				D2ED58111E378DED0012780D /* ChatVC.swift in Sources */,
 				D2ED57FD1E34B7200012780D /* SignInVC.swift in Sources */,
 				D2ED57E71E33A88F0012780D /* AppDelegate.swift in Sources */,

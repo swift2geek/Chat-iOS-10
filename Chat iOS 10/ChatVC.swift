@@ -10,8 +10,9 @@ import UIKit
 import JSQMessagesViewController
 import MobileCoreServices
 import AVKit
+import SDWebImage
 
-class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ChatVC: JSQMessagesViewController, MessageReceivedDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     private var messages = [JSQMessage]()
@@ -23,9 +24,16 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
         super.viewDidLoad()
         
         picker.delegate = self
+        MessagesHandler.Instance.delegate = self
         
-        self.senderId = "1"
-        self.senderDisplayName = "walter"
+        self.senderId = AuthProvider.Instance.userID()
+        self.senderDisplayName = AuthProvider.Instance.userName
+        
+        
+        MessagesHandler.Instance.observeMessages()
+        MessagesHandler.Instance.observeMediaMessages()
+        
+        
 
         
     }
@@ -34,8 +42,15 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
         let bubbleFactory = JSQMessagesBubbleImageFactory()
-        //let message = messages[indexPath.item]
-        return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.blue)
+        let message = messages[indexPath.item]
+        
+        if message.senderId == self.senderId {
+          return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.blue)
+        } else {
+            return bubbleFactory?.incomingMessagesBubbleImage(with: UIColor.green)
+        }
+        
+        
     }
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource! {
@@ -76,8 +91,7 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
         
-        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text))
-        collectionView.reloadData()
+        MessagesHandler.Instance.sendMessage(senderID: senderId, senderName: senderDisplayName, text: text)
         
         //this will remove the text from the text field
         finishSendingMessage()
@@ -122,15 +136,14 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let pic = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            let img = JSQPhotoMediaItem(image: pic)
+          
+            let data = UIImageJPEGRepresentation(pic, 0.01)
             
-            self.messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, media: img))
+            MessagesHandler.Instance.sendMedia(image: data, video: nil, senderID: senderId, senderName: senderDisplayName)
             
-        } else if let vidUrl = info [UIImagePickerControllerMediaURL] as? URL {
+        } else if let vidURL = info [UIImagePickerControllerMediaURL] as? URL {
          
-            let video = JSQVideoMediaItem(fileURL: vidUrl, isReadyToPlay: true)
-            messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, media: video))
-            
+            MessagesHandler.Instance.sendMedia(image: nil, video: vidURL, senderID: senderId, senderName: senderDisplayName)
             
             
         }
@@ -142,6 +155,63 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     
     // END PICKER VIEW FUNCTIONS
+    
+    
+    
+    // DELEGATION FUNCTIONS
+    
+    func messageReceived(senderID: String, senderName: String, text: String) {
+        messages.append(JSQMessage(senderId: senderID, displayName: senderName, text: text))
+        collectionView.reloadData()
+    }
+    
+    func mediaReceived(senderID: String, senderName: String, url: String) {
+        
+        if let mediaURL = URL(string: url) {
+            
+            do {
+                
+                let data = try Data(contentsOf: mediaURL)
+                
+                if let _ = UIImage(data: data) {
+                    
+                    let _ = SDWebImageDownloader.shared().downloadImage(with: mediaURL, options: [], progress: nil, completed: { (image, data, error, finished) in
+                      
+                        DispatchQueue.main.async {
+                            let photo = JSQPhotoMediaItem(image: image)
+                            if senderID == self.senderId {
+                                photo?.appliesMediaViewMaskAsOutgoing = true
+                            } else {
+                                photo?.appliesMediaViewMaskAsOutgoing = false
+                            }
+                            
+                            self.messages.append(JSQMessage(senderId: senderID, displayName: senderName, media: photo))
+                            self.collectionView.reloadData()
+                            
+                        }
+                        
+                    })
+                    
+                } else {
+                    let video = JSQVideoMediaItem(fileURL: mediaURL, isReadyToPlay: true)
+                    if senderID == self.senderId {
+                        video?.appliesMediaViewMaskAsOutgoing = true
+                    } else {
+                        video?.appliesMediaViewMaskAsOutgoing = false
+                    }
+                    messages.append(JSQMessage(senderId: senderID, displayName: senderName, media: video))
+                    self.collectionView.reloadData()
+                }
+                
+            } catch {
+                //here we are gonna catch all potential errors that we get
+            }
+            
+        }
+        
+    }
+    
+    // END DELEGATION FUNCTIONS
     
     @IBAction func backBtn(_ sender: Any) {
         
